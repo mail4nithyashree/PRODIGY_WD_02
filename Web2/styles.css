@@ -1,0 +1,140 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(
+        45deg,
+        #5680E9 0%,
+        #84CEEB 25%,
+        #5AB9EA 50%,
+        #C1C8E4 75%,
+        #8860D0 100%
+    );
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    background: linear-gradient(45deg, black, #8860D0);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+}
+
+.page-header .logo {
+    display: flex;
+    align-items: center;
+}
+
+.page-header .logo i {
+    font-size: 2em;
+    color: #2478b8;
+    margin-right: 10px;
+}
+
+.page-header .logo span {
+    font-size: 1.5em;
+    color: #2478b8;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+}
+
+.container {
+    text-align: center;
+    padding: 20px 10px;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 600px;
+}
+
+p, h1 {
+    font-size: 3em;
+    color: #2478b8;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+}
+
+.stopwatch {
+    text-align: center;
+    background: linear-gradient(45deg, #95abe2, #8860D0);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+.time-display {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.controls {
+    margin-bottom: 20px;
+}
+
+button {
+    font-size: 1em;
+    padding: 10px 20px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+button:disabled {
+    background-color: #cccccc;
+}
+
+.laps {
+    list-style: none;
+    padding: 0;
+}
+
+.laps li {
+    margin: 5px 0;
+    padding: 5px;
+    background: #f4f4f4;
+    border-radius: 5px;
+}
+
+@media (max-width: 600px) {
+    .page-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .time-display {
+        font-size: 2.5em;
+    }
+
+    .controls button {
+        font-size: 0.9em;
+        padding: 8px 15px;
+    }
+
+    .container {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 400px) {
+    .time-display {
+        font-size: 2em;
+    }
+
+    .controls button {
+        font-size: 0.8em;
+        padding: 5px 10px;
+    }
+}
