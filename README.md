@@ -20,7 +20,7 @@ This project involves creating a stopwatch web application using HTML, CSS, and 
 <h2>File Structure</h2>
 <ul>
    <li><code>index.html</code>: Contains the HTML structure of the stopwatch application.</li>
-   <li><code>style.css</code>: Contains the CSS styles for the application.</li>
+   <li><code>styles.css</code>: Contains the CSS styles for the application.</li>
    <li><code>script.js</code>: Contains the JavaScript code for the stopwatch functionality.</li>
 </ul>
 
